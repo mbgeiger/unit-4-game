@@ -1,0 +1,61 @@
+.crystals{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.crystal{
+  border:1px solid green;
+  height: 200px;
+  width: 200px;
+}
+
+#title{
+  padding: 2px;
+  background: rgb(224, 103, 4);
+  height:150px;
+  margin: 1em;
+
+}
+
+#gamerules{
+  height: 600px;
+  background: burlywood;
+  margin: 1em;
+
+}
+#rando{
+  height: 200px;
+  background: greenyellow;
+  margin: 1em;
+}
+
+#scoreboard{
+  height: 200px;
+  background: lightseagreen;
+  margin: 1em;
+
+}
+
+#totallabel{
+  height: 50px;
+  background: green;
+  color: white; 
+  margin: 1em;
+
+
+}
+
+#totalscore{
+  height: 200px;
+  background: green;
+  color: white; 
+  margin: 1em;
+}
+
+h1{
+  color: white;
+
+}
