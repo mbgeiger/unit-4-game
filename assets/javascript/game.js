@@ -2,15 +2,37 @@
 
     //global variables
     var randomCrystal;
-    var win;
-    var loss;
+    var win = 0;
+    var loss = 0;
     var totalScore;
+    var previous = 0;
+
+
+    //function to start game
+
+    var start = function () {
+        
     
+        //function to find a random number and diplay to user
+    
+       var randomStartNumber = Math.floor(Math.random() * 102) + 19;
+       $("#rando").html(randomStartNumber);
+
+       console.log(randomStartNumber)
+    
+    //function to assign random numbers to the crystal
     for(var i = 0; i < 4; i++){
+
+        var randomCrystal = Math.floor(Math.random() * 12)+1;
+
+        console.log(randomCrystal);
 
         var crystal = $("<div>");
 
-            crystal.attr("class", 'crystal');
+            crystal.attr({
+                        "class": 'crystal',
+                        "random-number": randomCrystal
+        });
        
 
         $(".crystals").append(crystal);
@@ -18,12 +40,40 @@
 
         console.log("hi!!");
     }
+//add to score when crystal is clicked
+$(".crystal").click( function () {
 
-    //function to find a random number and diplay to user
-    
-        Math.floor(Math.random() * 120) + 19;
-    
+    var pickedCrystal = parseInt($(this).attr('random-number'));
 
+    previous += pickedCrystal;
+
+    if (previous > randomStartNumber){
+        alert('You Lose');
+        console.log('You Lose');
+        $('#rando').html('You Lose');
+        loss++;
+        $('#Losses').html(`Losses: ${loss}`);
+    } 
+    else if (previous === randomStartNumber){
+        alert('You Win!');
+        console.log('You Win!');
+        $('#rando').html('You Win!');
+        win++;
+        $('#Wins').html(`Wins: ${win}`);
+
+
+
+    }
+
+    console.log(previous);
+
+});
+
+
+
+    
+    
+    }
 
 //pseudo code
 

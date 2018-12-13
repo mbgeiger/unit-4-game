@@ -1,7 +1,12 @@
+body{
+  background-image: url('../images/crystal-background.jpeg');
+  
+}
+
 .crystals{
 
   display: flex;
-  justify-content: space-around;
+  justify-content:  space-around;
   align-items: center;
 
 }
@@ -16,26 +21,29 @@
   padding: 2px;
   background: rgb(224, 103, 4);
   height:150px;
-  margin: 1em;
+  margin: .5em;
 
 }
 
 #gamerules{
   height: 600px;
   background: burlywood;
-  margin: 1em;
+  margin: .5em;
 
 }
 #rando{
   height: 200px;
   background: greenyellow;
-  margin: 1em;
+  margin: .5em;
+  color: black;
+  font-size: xx-large;
+  
 }
 
 #scoreboard{
   height: 200px;
   background: lightseagreen;
-  margin: 1em;
+  margin: .5em;
 
 }
 
@@ -43,7 +51,7 @@
   height: 50px;
   background: green;
   color: white; 
-  margin: 1em;
+  margin: .5em;
 
 
 }
@@ -52,7 +60,7 @@
   height: 200px;
   background: green;
   color: white; 
-  margin: 1em;
+  margin: .5em;
 }
 
 h1{
