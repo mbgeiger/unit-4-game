@@ -10,7 +10,7 @@
 
     //function to start game
 
-    var start = function () {
+   
         
     
         //function to find a random number and diplay to user
@@ -34,6 +34,7 @@
                         "random-number": randomCrystal
         });
        
+        
 
         $(".crystals").append(crystal);
 
@@ -73,7 +74,7 @@ $(".crystal").click( function () {
 
     
     
-    }
+   
 
 //pseudo code
 
